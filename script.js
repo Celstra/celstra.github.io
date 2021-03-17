@@ -129,7 +129,7 @@ function idea (){
   var wordOne = (randomValue(setOne));
   var wordTwo = (randomValue(setTwo));
   var wordThree = (randomValue(setThree));
-  document.getElementById("idea").innerHTML ="Hey I need you to do a " + wordOne + " " + wordTwo + " for a " + wordThree + ".";
+  document.getElementById("idea").innerHTML ="Hey I need you to make a " + wordOne + " " + wordTwo + " for a " + wordThree + ".";
 }
 
 
