@@ -65,3 +65,7 @@ hr {
         margin-right: auto;
         background-color: #b7d0e2;
       }
+
+p {
+  font-size: 24px;
+}
