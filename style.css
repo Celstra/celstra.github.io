@@ -25,6 +25,7 @@ p {
 }
 
 button {
-  width: 50%;
+  margin: auto;
+  width: fit-content;
   padding: 10px;
 }
