@@ -129,12 +129,12 @@ function idea (){
   var wordOne = (randomValue(setOne));
   var wordTwo = (randomValue(setTwo));
   var wordThree = (randomValue(setThree));
-  document.getElementById("idea").innerHTML ="Hey I need you to make a " + wordOne + " " + wordTwo + " for a " + wordThree + ".";
+  document.getElementById("idea").innerHTML ="I need you to make a " + wordOne + " " + wordTwo + " for a " + wordThree + ".";
 }
 
 
 function revision (){
   var wordFour = (randomValue(setFour));
   var revisionNumber = Math.floor(Math.random() * 6) + 1;
-  document.getElementById("revision").innerHTML ="These are looking great but I need you to revise thumbnail " + revisionNumber + " and make it more " + wordFour + ".";
+  document.getElementById("revision").innerHTML ="Revise thumbnail " + revisionNumber + " and make it more " + wordFour + ".";
 }
