@@ -1,14 +1,14 @@
 #idea{
-  width: 100%;
-  padding: 10%;
+  margin: auto;
+  width: 85%;
   box-sizing: border-box;
   background-color: #ff533f;
   color: white;
 }
 
 #revision{
-  width: 100%;
-  padding: 10%;
+  margin: auto;
+  width: 85%;
   box-sizing: border-box;
   background-color: #ff533f;
   color: white;
@@ -19,5 +19,12 @@ sub{
 }
 
 p {
+  margin: auto;
+  width: 85%;
   font-size: 24px;
+}
+
+button {
+  width: 25%;
+  padding: 10px;
 }
