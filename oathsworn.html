@@ -24,6 +24,7 @@
         font-size: 18px;
         cursor: pointer;
         font-family: 'Berkshire Swash', cursive;
+        margin: 2px 0px;
       }
 
       .btn-group .button:not(:last-child) {
@@ -61,7 +62,6 @@
       .intro {
         background-color: #ebd8b7;
         padding: 5%;
-        align-text: left;
         font-family: 'Lato', sans-serif;
       }
 
@@ -74,7 +74,6 @@
       .print {
         font-weight: bold;
         background-color: #9a8194;
-        //background-color: #f8f5f1;
       }
 
       h1 {
@@ -134,21 +133,25 @@
     <p id="white-deck">There are currently 18 cards in this deck.</p>
     <hr>
     <p id="draw-white" class="print"></p>
+    <p id="print-discard-white"></p>
     <!--Checks deck Input field to make sure it is between 1 and 10-->
     <script>
       var elm = document.body.querySelector("input[id=white]");
       elm.onkeyup = createValidator(elm);
+      document.getElementById("print-discard-white").style.display="none";
     </script>
 
     <label>How many <strong> YELLOW </strong> will you draw</label>
     <input type="number" min="0" max="10" id="yellow" value="0" class="num">
     <p id="yellow-deck">There are currently 18 cards in this deck.</p>
-    <hr-oath>
+    <hr>
     <p id="draw-yellow" class="print"></p>
+    <p id="print-discard-yellow"></p>
     <!--Checks deck Input field to make sure it is between 1 and 10-->
     <script>
       var elm = document.body.querySelector("input[id=yellow]");
       elm.onkeyup = createValidator(elm);
+      document.getElementById("print-discard-yellow").style.display="none";
     </script>
 
     <label>How many <strong> RED </strong> will you draw</label>
@@ -156,10 +159,12 @@
     <p id="red-deck">There are currently 18 cards in this deck.</p>
     <hr>
     <p id="draw-red" class="print"></p>
+    <p id="print-discard-red"></p>
     <!--Checks deck Input field to make sure it is between 1 and 10-->
     <script>
       var elm = document.body.querySelector("input[id=red]");
       elm.onkeyup = createValidator(elm);
+      document.getElementById("print-discard-red").style.display="none";
     </script>
 
     <label>How many <strong> BLACK </strong> will you draw</label>
@@ -167,16 +172,19 @@
     <p id="black-deck">There are currently 18 cards in this deck.</p>
     <hr>
     <p id="draw-black" class="print"></p>
+    <p id="print-discard-black"></p>
     <!--Checks deck Input field to make sure it is between 1 and 10-->
     <script>
       var elm = document.body.querySelector("input[id=black]");
       elm.onkeyup = createValidator(elm);
+      document.getElementById("print-discard-black").style.display="none";
     </script>
 
   <div class ="btn-group">
     <button class="button" onclick="draw()">Draw</button>
     <button class="button" onclick="discard()">Discard</button>
     <button class="button" onclick="reset()">Reset Decks</button>
+    <button class="button" onclick="showDiscard()">Toggle Discarded</button>
   </div>
   </div>
 
@@ -233,7 +241,7 @@
     <button class="button" onclick="mreset()">Reset Decks</button>
   </div>
   </div>
-<br>
+
 <h1><a href="index.html">Back</a></h1>
   </body>
 
