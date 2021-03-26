@@ -16,7 +16,6 @@ var discardBlack = [];
 function draw (item, index){
   //This grabs the values out of HTML that the user inputs
   var w = document.getElementById("white").value;
-  console.log(w)
   var y = document.getElementById("yellow").value;
   var r = document.getElementById("red").value;
   var b = document.getElementById("black").value;
@@ -103,7 +102,7 @@ function discard(){
     i--;
   }
   document.getElementById("draw-yellow").innerHTML = "";
-
+  
   for (i = 0; i < currentRed.length; i++) {
     discardRed.push(currentRed[i]);
     currentRed.splice(i, 1);
@@ -117,16 +116,22 @@ function discard(){
     i--;
   }
   document.getElementById("draw-black").innerHTML = "";
+
+document.getElementById("print-discard-white").innerHTML = "DISCARDED: " + discardWhite;
+document.getElementById("print-discard-yellow").innerHTML = "DISCARDED: " + discardYellow;
+document.getElementById("print-discard-red").innerHTML = "DISCARDED: " + discardRed;
+document.getElementById("print-discard-black").innerHTML = "DISCARDED: " + discardBlack;
+
 }
 
 function reset(){
-  console.log("Reset Activated")
   for (i = 0; i < discardWhite.length; i++) {
     whiteDeck.push(discardWhite[i]);
     discardWhite.splice(i, 1);
     i--;
   }
   document.getElementById("white-deck").innerHTML = "There are currently " + whiteDeck.length + " cards in this deck.";
+  document.getElementById("print-discard-white").innerHTML = "";
 
   for (i = 0; i < discardYellow.length; i++) {
     yellowDeck.push(discardYellow[i]);
@@ -134,6 +139,7 @@ function reset(){
     i--;
   }
   document.getElementById("yellow-deck").innerHTML = "There are currently " + yellowDeck.length + " cards in this deck.";
+  document.getElementById("print-discard-yellow").innerHTML = "";
 
   for (i = 0; i < discardRed.length; i++) {
     redDeck.push(discardRed[i]);
@@ -141,6 +147,7 @@ function reset(){
     i--;
   }
   document.getElementById("red-deck").innerHTML = "There are currently " + redDeck.length + " cards in this deck.";
+  document.getElementById("print-discard-red").innerHTML = "";
 
   for (i = 0; i < discardBlack.length; i++) {
     blackDeck.push(discardBlack[i]);
@@ -148,4 +155,36 @@ function reset(){
     i--;
   }
   document.getElementById("black-deck").innerHTML = "There are currently " + blackDeck.length + " cards in this deck.";
+  document.getElementById("print-discard-black").innerHTML = "";
+}
+
+function showDiscard() {
+  var w = document.getElementById("print-discard-white");
+  if (w.style.display === "none") {
+    w.style.display = "block";
+  } else {
+    w.style.display = "none";
+  }
+
+  var y = document.getElementById("print-discard-yellow");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+
+  var r = document.getElementById("print-discard-red");
+  if (r.style.display === "none") {
+    r.style.display = "block";
+  } else {
+    r.style.display = "none";
+  }
+
+  var b = document.getElementById("print-discard-black");
+  if (b.style.display === "none") {
+    b.style.display = "block";
+  } else {
+    b.style.display = "none";
+  }
+
 }
