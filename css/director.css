@@ -29,3 +29,15 @@ button {
   width: fit-content;
   padding: 10px;
 }
+
+a {
+  color: #343f56;
+  font-family: 'Poppins', sans-serif;
+  margin: auto;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color:#ff533f;
+}

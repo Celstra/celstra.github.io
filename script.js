@@ -116,7 +116,7 @@ var setFour = [
     "cartoonish",
     "ornate",
     "simple",
-    "zazzy",
+    "zazzy"
 ];
 
 //Grabs a random string from array to be used in functions.

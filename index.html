@@ -1,51 +1,86 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Digital Art Director</title>
-    <!-- Bootstrap imported -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="style.css" media="screen" />
-  </head>
+<html lang="en" dir="ltr">
 
-<div class="container-fluid">
-  <body>
-    <script src="script.js"></script>
-    <h1 class="text-primary text-center"> DIGITAL ART DIRECTOR </h1>
-    <div class="row">
-      <div class="well" id="well-one">
-        <p class="text-center">You will be creating a set of 15-20 thumbnails based on the criteria below.</p>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta name="viewport" content="width=device-width">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.gstatic.com"> 
+  <link href="https://fonts.googleapis.com/css2?family=Amita&family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <title>Artist Protal</title>
+</head>
 
-        <button class="btn btn-primary center-block" id="button-idea" onclick="idea()"> GENERATE IDEA </button>
-        <br>
+<body>
 
-      <div class="well" id="well-three">
-        <p class="text-center" id="idea"></p>
-      </div>
-
-      <div class="well" id="well-three">
-        <p class="text-center"> Pick your top 6 thumbnails and show them to the Art Director. </p>
-      </div>
-
-      <button class="btn btn-primary center-block" id="button-revision" onclick="revision()"> RANDOM REVISION </button>
-      </br>
-
-      <div class="well" id="well-three">
-        <p class="text-center" id="revision"></p>
-      </div>
-
-      <h5>Credit goes to Paul Richards, for creating the terms that are used in these generations. If you need an introduction to what we are doing: <a href="https://www.autodestruct.com/thumbwar.htm">here</a> is his website that walks you through it.</h5>
-      </br>
-
+  <div class="top-container">
+    <img class="top-cloud" src="images/cloud.png" alt="clouds">
+    <h1>I'm Ryan.</h1>
+    <h2>an artist.</h2>
+    <img class="bottom-cloud" src="images/cloud.png" alt="clouds">
+    <img class="pixel" src="images/pixelryan.png" alt="pixel Ryan" width="400px" height="400px">
+  </div>
+  <div class="middle-container">
+    <div class="profile">
+      <img class="intro-picture" src="images/ryan.png" alt="picture of Ryan">
+      <h2>Hello.</h2>
+      <p class="intro">I am also a hobbyist. This is a small site that I run to show some of my other endeavors into web programming and making small web apps. This site will change over time as I learn and grow as an artist.</p>
     </div>
+    <hr>
+    
+    <div class="artist-apps">
+      <h2>Artist Based Web Apps</h2>
+      <div class="skill-row">
+        <a href="art_director.html">
+        <img class="director-img" src="images/art_director.png" alt="image of the art director web app">
+        </a>
+        <h3>Digital Art Director</h3>
+        <p>Based on the THUMB WAR : Design Iteration Combat Simulation by Paul Richards. These are real prompts that you would see while working in a studio and an art director would come to you and say "Hey! give me this or that." So I went ahead and designed a really simple web app to help in making thumbnails followed by revisions.</p>
+      </div>
+      <div class="skill-row">
+        <a href="https://www.lifetolegend.com/creature-designer/">
+        <img class="creature-img" src="images/creature-design.png" alt="image of creature generator">
+        </a>
+        <h3>Creature Generator</h3>
+        <p>I built out this creature generator for Tressa Geniets who runs a Facebook Group called 'Wildlife and Creature Design Studies and Prompts'. She is super cool and recently launched a website where you can find the generator that I created matching the style of her website.</p>
+      </div>
     </div>
+    <hr>
+    
+    <div class="board-games">
+      <h2>Board Game Apps</h2>
+      <div class="skill-row">
+        <a href="oathsworn.html">
+        <img class="oathsworn-img" src="images/oath-img.png" alt="image of the oathsworn might deck">
+        </a>
+        <h3>Oathsworn: Into the Deepwood Might Deck Manager</h3>
+        <p>I kickstarted oathsworn and wanted to make a might deck manager since the decks are quite small and can be hard to shuffle. I am also thinking of ways to improve this one as well. Let me know if there is something you want to see added.</p>
+      </div>
+      <div class="skill-row">
+        <img class="lantern-img" src="images/lantern_img.png" alt="image of the kingdom death monster app">
+        <h3>Kingdomdeath Monster Simple Dice Roller</h3>
+        <p>Really quick and simple dice roller for Kingdom Death Monster board game. Was trying out some cool things and I plan on expanding a little more to see what I can really do with it. [COMING SOON]</p>
+      </div>
+    </div>
+    <hr>
+    
+    <div class="Suggestions">
+      <h2>Suggestions</h2>
+      <h3>You got feedback or suggested additions.</h3>
+        <p class="contact-message">If there is something you would like added to an exisiting app or if you have any suggestions feel free to reach out below! I want to hear from you.</p>
+        <a class="btn" href="mailto:ryan.holt.ce@gmail.com">CONTACT ME</a>
+    </div>
+  </div>
+  
+  
+  <div class="bottom-container">
+    
+    <a class="footer-link" href="https://www.artstation.com/mileagematters/blog">Art Blog</a>
+    <a class="footer-link" href="https://www.mileagematters.org/">Portfolio</a>
+    <a class="footer-link" href="https://www.instagram.com/mileagematters/">Instagram</a>
+    <p class="copyright">© 2021 Ryan Charles-Edwin Holt.</p>
+  </div>
 
-<h3>This site will soon be a landing page with other catagories and generators. Here is one of my most recent projects:</h3>
-<h4><a href="oathsworn.html">Might Deck Manager (Oathsworn: Into the Deepwood)</a></h4>
+</body>
 
-  </body>
-
-</div>
 </html>
