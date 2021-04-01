@@ -28,7 +28,7 @@ h3 {
 
 p {
   line-height: 2;
-  
+  padding: 0 5%;
 }
 
 hr {
@@ -50,13 +50,7 @@ hr {
 
 .top-container {
   background-color: #e9896a;
-  padding-top: 100px;
-}
-
-.top-cloud {
-  
-  right: 300%;
-  top: 40px;
+  padding: 3%;
 }
 
 a {
@@ -86,14 +80,12 @@ a:hover {
 .skill-row {
   width: 50%;
   margin: 100px auto;
-  text-align: left;
+  
 }
 
 .director-img {
   width: 25%;
   border-radius: 50%;
-  float: left;
-  margin-right: 30px;
   box-shadow: #343f56 5px 5px;
 }
 
@@ -104,8 +96,6 @@ a:hover {
 .creature-img {
   width: 25%;
   border-radius: 50%;
-  float: right;
-  margin-left: 30px;
   box-shadow: #343f56 5px 5px;
 }
 
@@ -116,8 +106,6 @@ a:hover {
 .oathsworn-img {
   width: 25%;
   border-radius: 50%;
-  float: left;
-  margin-right: 30px;
   box-shadow: #343f56 5px 5px;
 }
 
@@ -128,8 +116,6 @@ a:hover {
 .lantern-img {
   width: 25%;
   border-radius: 50%;
-  float: right;
-  margin-left: 30px;
 }
 
 .intro-picture {
