@@ -95,6 +95,13 @@ function discard(){
     i--;
   }
   document.getElementById("draw-white").innerHTML = "";
+  var whiteZero = 0
+//Check how man misses in array
+  discardWhite.forEach(item => {
+    if (item == 0) {
+      whiteZero++;
+    }
+  })
 
   for (i = 0; i < currentYellow.length; i++) {
     discardYellow.push(currentYellow[i]);
@@ -102,6 +109,13 @@ function discard(){
     i--;
   }
   document.getElementById("draw-yellow").innerHTML = "";
+  var yellowZero = 0
+//Check how man misses in array
+  discardYellow.forEach(item => {
+    if (item == 0) {
+      yellowZero++;
+    }
+  })
   
   for (i = 0; i < currentRed.length; i++) {
     discardRed.push(currentRed[i]);
@@ -109,6 +123,13 @@ function discard(){
     i--;
   }
   document.getElementById("draw-red").innerHTML = "";
+  var redZero = 0
+//Check how man misses in array
+  discardRed.forEach(item => {
+    if (item == 0) {
+      redZero++;
+    }
+  })
 
   for (i = 0; i < currentBlack.length; i++) {
     discardBlack.push(currentBlack[i]);
@@ -116,11 +137,18 @@ function discard(){
     i--;
   }
   document.getElementById("draw-black").innerHTML = "";
+  var blackZero = 0
+//Check how man misses in array
+  discardBlack.forEach(item => {
+    if (item == 0) {
+      blackZero++;
+    }
+  })
 
-document.getElementById("print-discard-white").innerHTML = "DISCARDED: " + discardWhite;
-document.getElementById("print-discard-yellow").innerHTML = "DISCARDED: " + discardYellow;
-document.getElementById("print-discard-red").innerHTML = "DISCARDED: " + discardRed;
-document.getElementById("print-discard-black").innerHTML = "DISCARDED: " + discardBlack;
+document.getElementById("print-discard-white").innerHTML = "Current Misses in Discard: " + whiteZero + " of 6"; //+ " DISCARDED: " + discardWhite;
+document.getElementById("print-discard-yellow").innerHTML = "Current Misses in Discard: " + yellowZero + " of 6"; //"DISCARDED: " + discardYellow;
+document.getElementById("print-discard-red").innerHTML = "Current Misses in Discard: " + redZero + " of 6"; //"DISCARDED: " + discardRed;
+document.getElementById("print-discard-black").innerHTML = "Current Misses in Discard: " + blackZero + " of 6"; //"DISCARDED: " + discardBlack;
 
 }
 
