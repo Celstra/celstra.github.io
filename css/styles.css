@@ -1,14 +1,9 @@
-html {
-  overflow-x: hidden;
-}
-
 body {
   background-color: #387c6d;
   margin: 0;
   text-align: center;
   font-family: 'Roboto Slab', serif;
   color: #f8f5f1;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -46,7 +41,8 @@ hr {
 }
 
 .pixel {
-  padding: 0 5%;
+  width: 60%;
+  height: 60%;
 }
 
 .contact-message {
